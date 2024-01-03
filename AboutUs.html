@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR ACADEMY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Noto+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color:powderblue;">
+    <div class="header_section">
+        <h1><i> STAR &ensp;ACADEMY</i></h1>
+        <ul class="link">
+            <li><a href="index.html"><i class="fa-solid fa-house fa-2xs" style="color: #4c0755;"></i>HOME</a></li>
+            <li><a href="AboutUs.html"><i class="fa-solid fa-globe fa-2xs" style="color: #4c0755;"></i>ABOUT US</a></li>
+            <li id="classes" onclick="myFunction()" class="dropbtn">
+                <i class="fa-solid fa-list fa-2xs" style="color: #4c0755;"></i>CLASSES<i
+                    class="fa-solid fa-caret-down fa-2xs" style="color: #4c0755;"></i>
+            </li>
+            <div id="MyDropdown" class="dropdown-content">
+                <a href="Dance.html">Dance</a>
+                <a href="Music.html">Music</a>
+
+            </div>
+
+
+            <li><a href="Register.html"><i class="fa-solid fa-user fa-2xs" style="color: #4c0755;"></i>REGISTER</a></li>
+
+        </ul>
+    </div>
+
+    <h2>ABOUT US </h2>
+    <div class="paragraph">
+        <p>
+        <ul>
+
+
+            <li>This Academy is the premier organisation of our country involved in the promotion and safeguarding of
+                the classical fine arts of music and dance.</li>
+            <li>Its tradition and history go back 10 years ,when the Academy was founded.<br>
+                Over these eight decades and more, the Academy has always striven to uphold the core values of
+                classicism and maintain high standards of excellence. <br>
+            <li>The classic dilemma for an organisation of this kind is to look to achieve a fine balance between the
+                competing demands of tradition and modernity.</li>
+            It is fair to say that the Academy has had reasonable success in achieving that golden mean, without
+            compromising on the classical values.
+            </p>
+            <p>
+            <h3>COURSES UNDERTAKEN</h3>
+            <ul>
+                <li>CLASSICAL DANCE</li>
+                <li>WESTERN DANCE</li>
+                <li>ZUMBA</li>
+                <li>VOCALS</li>
+                <li>DRUMS</li>
+                <li>KEYBOARD</li>
+            </ul>
+            </p>
+    </div>
+
+    <div class="contact">
+        <div class=details>
+            <p>
+                <b style="color:darkgoldenrod"> DANCE AND MUSIC ACADEMY</b><br>
+                <b style="color:yellow"><i class="fa-solid fa-location-dot fa-xm"
+                        style="color: #e9e21c;"></i>&nbsp;ADDRESS:</b><br>
+                NO:10, Anna Nagar, Chennai - 600037<br><br>
+                <b style="color:yellow"><i class="fa-solid fa-phone fa-xm"
+                        style="color: #e9e21c;"></i>&nbsp;CONTACT:</b><br>
+                9876543210<br><br>
+                <b style="color:yellow"><i class="fa-solid fa-location-dot fa-xm"
+                        style="color: #e9e21c;"></i>&nbsp;EMAIL ID:</b><br>
+                staracademy@gmail.com
+
+
+            </p>
+        </div>
+        <div class="mission">
+            <p>
+                <b style="color:yellow"><i class="fa-solid fa-bullseye fa-xm" style="color: #e9e21c;"></i>&nbsp; OUR
+                    MISSION:</b><br>
+                Quality, artistic education and personal growth in an inclusive and joyful learning environment.<br><br>
+
+                <b style="color:yellow"><i class="fa-solid fa-clock fa-xm"
+                        style="color: #e9e21c;"></i>&nbsp;HOURS:</b><br>
+
+                Mon: 10 am - 8pm<br>
+                Tue: Closed<br>
+                Wed-Sun: 10am - 8pm
+
+
+            </p>
+        </div>
+    </div>
+    <div class="social">
+
+        <i class="fa-brands fa-instagram fa-2xl"
+            style="color:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);"></i>
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #2a70ea;"></i>
+        <i class="fa-brands fa-twitter fa-2xl" style="color:#00acee;"></i>
+
+
+    </div>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("MyDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+</script>
+
+</html>

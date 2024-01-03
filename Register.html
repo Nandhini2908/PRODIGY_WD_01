@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR ACADEMY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Noto+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="validate.js"></script>
+
+</head>
+
+<body style="background-color: lightcyan;">
+    <div class="header_section">
+        <h1><i> STAR &ensp;ACADEMY</i></h1>
+        <ul class="link">
+            <li><a href="index.html"><i class="fa-solid fa-house fa-2xs" style="color: #4c0755;"></i>HOME</a></li>
+            <li><a href="AboutUs.html"><i class="fa-solid fa-globe fa-2xs" style="color: #4c0755;"></i>ABOUT US</a></li>
+            <li id="classes" onclick="myFunction()" class="dropbtn">
+                <i class="fa-solid fa-list fa-2xs" style="color: #4c0755;"></i>CLASSES<i
+                    class="fa-solid fa-caret-down fa-2xs" style="color: #4c0755;"></i>
+            </li>
+            <div id="MyDropdown" class="dropdown-content">
+                <a href="Dance.html">Dance</a>
+                <a href="Music.html">Music</a>
+
+            </div>
+
+            <li><a href="Register.html"><i class="fa-solid fa-user fa-2xs" style="color: #4c0755;"></i>REGISTER</a></li>
+
+        </ul>
+    </div>
+    <div class="border">
+
+        <div class="validate">
+            <form>
+                <h2>REGISTRATION FORM</h2>
+                <div class="group">
+                    <p>
+                        <label>FIRST NAME</label>
+                        <input type="text" size="25" name="fname" placeholder="Enter your First name" required>
+                    <div class="error"></div>
+
+
+                    </p>
+                </div>
+                <div class="group">
+                    <p>
+                        <label>LAST NAME</label>
+                        <input type="text" size="25" name="lname" placeholder="Enter your Last name" required>
+                    <div class="error"></div>
+
+
+
+                    </p>
+                </div>
+                <div class="group">
+                    <p>
+                        <label>MAIL ID</label>
+                        <input type="text" size="25" name="mail" placeholder="Enter your Email ID" required>
+                    <div class="error"></div>
+
+
+
+                    </p>
+                </div>
+                <div class="group">
+
+                    <p>
+                        <label>GENDER</label>
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    <div class="error"></div>
+
+                    </p>
+                </div>
+                <div class="group">
+                    <p>
+                        <label>ADDRESS</label>
+                        <textarea name="address" rows="3">
+                </textarea>
+                    <div class="error"></div>
+
+                    </p>
+                </div>
+
+                <p>
+                    <label>STATE
+                        <select name="state">
+                            <option> TAMILNADU</option>
+                            <option> ANDHRA PRADESH</option>
+                            <option> KERALA</option>
+                        </select>
+                    </label>
+                </p>
+        </div>
+
+        <div class="group">
+            <p>
+                <button type="submit"> SUBMIT </button>&nbsp;
+                <button type="reset">RESET</button>
+            <div class="group">
+                </p>
+            </div>
+        </div>
+     </form>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("MyDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+</script>
+
+</html>

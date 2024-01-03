@@ -1,0 +1,218 @@
+h1 {
+    color: purple;
+    font-family: "Lumanosimo", cursive;
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: darkred;
+}
+
+.header_section {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    gap: 10px;
+}
+
+.link li {
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.link li:hover,
+.link li a:hover,
+.link li i:hover,
+.link li a i:hover {
+    color: red !important;
+}
+
+.container {
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: x-large;
+}
+
+.border {
+    display: grid;
+
+    padding: 10px;
+    justify-content: center;
+}
+
+form {
+    border: 2px solid;
+    padding: 20px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(253, 187, 45, 1) 100%);
+}
+
+.paragraph {
+    font-size: larger;
+}
+
+.error {
+    color: red;
+    font-size: 30px;
+    margin_top: 2px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+}
+
+.group input {
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 1px;
+    border: 1px lightblue;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    column-gap: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+ul.link li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-family: "Lumanosimo", cursive;
+    font-family: "Noto Serif", serif;
+}
+
+ul.link li a i {
+    font-size: 20px;
+}
+
+ul.link li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropbtn {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-family: "Lumanosimo", cursive;
+    font-family: "Noto Serif", serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropbtn i {
+    font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 200px;
+    top: 85px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.social {
+    justify-content: center;
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    gap: 12px;
+}
+
+.row-grid {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.image {
+    display: inline-block;
+    text-align: center;
+
+    float: left;
+}
+
+figure {
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.image #Zoom-In img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.image #Zoom-In:hover img {
+    transform: scale(1.3);
+}
+
+marquee {
+    color: red;
+    font-size: 25px;
+}
